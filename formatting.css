@@ -92,7 +92,7 @@ section {
     font-family: Consolas, monaco, monospace;
     font-weight: bold;
     font-size: 1.5em;
-    content: "+";
+    content: "-";
     vertical-align: text-top;
     display: inline-block;
     width: 20px;
@@ -100,15 +100,13 @@ section {
     float: right;
 }
 #expandCourse {
-    height: 0px;
     overflow: hidden;
-    transition: height 0.5s;
 }
 #toggleCourse:checked ~ #expandCourse {
-    height: 50em;
+    height: 0em;
 }
 #toggleCourse:checked ~ #labelCourse::before {
-    content: "-";
+    content: "+";
 }
 
 #labelTeach:hover {
@@ -118,7 +116,7 @@ section {
     font-family: Consolas, monaco, monospace;
     font-weight: bold;
     font-size: 1.5em;
-    content: "+";
+    content: "-";
     vertical-align: text-top;
     display: inline-block;
     width: 20px;
@@ -126,15 +124,13 @@ section {
     float: right;
 }
 #expandTeach {
-    height: 0px;
     overflow: hidden;
-    transition: height 0.5s;
 }
 #toggleTeach:checked ~ #expandTeach {
-    height: 20em;
+    height: 0em;
 }
 #toggleTeach:checked ~ #labelTeach::before {
-    content: "-";
+    content: "+";
 }
 
 #labelResearch:hover {
@@ -144,7 +140,7 @@ section {
     font-family: Consolas, monaco, monospace;
     font-weight: bold;
     font-size: 1.5em;
-    content: "+";
+    content: "-";
     vertical-align: text-top;
     display: inline-block;
     width: 20px;
@@ -152,12 +148,10 @@ section {
     float: right;
 }
 #expandResearch {
-    height: 0px;
     overflow: hidden;
-    transition: height 0.5s;
 }
 #toggleResearch:checked ~ #expandResearch {
-    height: 8em;
+    height: 0em;
 }
 #toggleResearch:checked ~ #labelResearch::before {
     content: "-";
