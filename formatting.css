@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    padding: 3em;
+}
+#photo {
+    margin-left: 2em;
+    text-align: right;
+    float:right;
+}
+.card {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #b3b3b3;
+    padding: 2em;
+    overflow: auto;
+    border-style: groove;
+    border-color: #808080;
+    width: 850px;
+    margin: 0 auto;
+    color: black;
+}
+.name {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1.3em;
+}
+.icon {
+    text-align: center;
+    float: left;
+    margin-right: 2em;
+    margin-top: 2em;
+    color: black;
+}
+.symbol {
+    margin-bottom: .2em;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    color: #7B241C;
+    text-decoration: none;
+}
+
+
+input {
+    display: none;
+    visibility: hidden;
+}
+
+#labelExp:hover {
+    color: #000;
+}
+#labelExp::before {
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: "+";
+    vertical-align: text-top;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+#expandExp {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+section {
+    padding: 0 20px;
+}
+#toggleExp:checked ~ #expandExp {
+    height: 3em;
+}
+#toggleExp:checked ~ #labelExp::before {
+    content: "-";
+}
+
+#labelCourse:hover {
+    color: #000;
+}
+#labelCourse::before {
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: "+";
+    vertical-align: text-top;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+#expandCourse {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+#toggleCourse:checked ~ #expandCourse {
+    height: 50em;
+}
+#toggleCourse:checked ~ #labelCourse::before {
+    content: "-";
+}
+
+#labelTeach:hover {
+    color: #000;
+}
+#labelTeach::before {
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: "+";
+    vertical-align: text-top;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+#expandTeach {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+#toggleTeach:checked ~ #expandTeach {
+    height: 25em;
+}
+#toggleTeach:checked ~ #labelTeach::before {
+    content: "-";
+}
+
+#labelResearch:hover {
+    color: #000;
+}
+#labelResearch::before {
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+    content: "+";
+    vertical-align: text-top;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+#expandResearch {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+#toggleResearch:checked ~ #expandResearch {
+    height: 3em;
+}
+#toggleResearch:checked ~ #labelResearch::before {
+    content: "-";
+}
