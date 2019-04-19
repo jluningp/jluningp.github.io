@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background-image: url("background.jpg");
+    background-color: #e5e5e5;
     padding: 3em;
 }
 #photo {
@@ -7,16 +8,21 @@ body {
     text-align: right;
     float:right;
 }
+#me {
+    border-radius: 50%
+}
 .card {
     font-family: Verdana, Geneva, sans-serif;
-    background-color: #b3b3b3;
+    background-color: #e5e5e5/* #b3b3b3 */;
     padding: 2em;
     overflow: auto;
-    border-style: groove;
-    border-color: #808080;
+    border-style: solid;
+    border-color: black /* #5b5b5b  #808080 */;
+    border-width: 1px;
     width: 850px;
     margin: 0 auto;
     color: black;
+    border-radius: 8px;
 }
 .name {
     font-family: "Lucida Console", Monaco, monospace;
@@ -31,6 +37,8 @@ body {
 }
 .symbol {
     margin-bottom: .2em;
+    width: 50px;
+    height: 50px;
 }
 .link {
     text-decoration: none;
@@ -123,7 +131,7 @@ section {
     transition: height 0.5s;
 }
 #toggleTeach:checked ~ #expandTeach {
-    height: 25em;
+    height: 20em;
 }
 #toggleTeach:checked ~ #labelTeach::before {
     content: "-";
@@ -149,7 +157,7 @@ section {
     transition: height 0.5s;
 }
 #toggleResearch:checked ~ #expandResearch {
-    height: 3em;
+    height: 8em;
 }
 #toggleResearch:checked ~ #labelResearch::before {
     content: "-";
